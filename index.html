@@ -91,16 +91,75 @@
               Daftar
             </button>
           </div>
+          <div class="position-relative">
+            <button
+              type="button"
+              style="
+                padding: 0px;
+                margin-bottom: 0px;
+                line-height: 0px;
+                border: 0px !important;
+                background-color: transparent !important;
+              "
+              class="btn btn-primary video-btn position-absolute top-50 start-50 translate-middle z-3"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <a class="play-btn" href="#"></a>
+            </button>
+
+            <img src="hero-form.png" alt="" class="formHero mt-3 z-1" />
+          </div>
         </div>
       </div>
-      <img src="form-lapor.svg" alt="" class="formHero" />
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-md">
+          <div class="modal-content">
+            <div class="modal-body">
+              <iframe
+                width="100%"
+                height="720"
+                src="https://www.youtube.com/embed/L3it1FWnZjk?si=nj-pyNDKolTQN4zY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        $(document).ready(function () {
+          // Autoplay when the modal is shown
+          $("#exampleModal").on("shown.bs.modal", function () {
+            $("iframe").attr("src", $("iframe").attr("src") + "&autoplay=1");
+          });
+
+          // Stop video when the modal is closed
+          $("#exampleModal").on("hidden.bs.modal", function () {
+            $("iframe").attr(
+              "src",
+              $("iframe").attr("src").replace("&autoplay=1", "")
+            );
+          });
+        });
+      </script>
     </section>
     <!-- hero -->
 
     <!-- fitur -->
     <section
       id="Fitur"
-      class="fitur bg-primary bg-gradient text-white py-5 shadow"
+      class="fitur bg-gradient-section text-white py-5 shadow"
     >
       <div class="container">
         <div class="row g-3">
@@ -115,11 +174,12 @@
               style="transform: translateY(0px)"
             >
               <div class="card-body text-center">
-                <img
+                <!-- <img
                   src="lapor-ilu/12219840_4884150 1.svg"
                   alt=""
                   class="w-25 ratio ratio-1x1"
-                />
+                /> -->
+                <img src="img/ilu-03.svg" alt="" class="w-25 ratio ratio-1x1" />
                 <h5 class="card-title">Aspirasi</h5>
                 <p class="card-text fw-light">
                   Masyarakat dapat menyampaikan Aspirasi dengan aman dan terjaga
@@ -130,11 +190,7 @@
             </div>
             <div class="card border border-0 shadow card-Landing">
               <div class="card-body text-center">
-                <img
-                  src="lapor-ilu/30576701_7718875 1.svg"
-                  alt=""
-                  class="w-25 ratio ratio-1x1"
-                />
+                <img src="img/ilu-05.svg" alt="" class="w-25 ratio ratio-1x1" />
                 <h5 class="card-title">Pengaduan</h5>
                 <p class="card-text fw-light">
                   Ada Sebuah Penemuan?, bingung pengen lapor kemana?
@@ -145,17 +201,15 @@
             </div>
             <div class="card border border-0 shadow card-Landing">
               <div class="card-body text-center">
-                <img
-                  src="lapor-ilu/30576696_7720439 1.svg"
-                  alt=""
-                  class="w-25 ratio ratio-1x1"
-                />
+                <img src="img/ilu-04.svg" alt="" class="w-25 ratio ratio-1x1" />
                 <h5 class="card-title">Permintaan Informasi</h5>
                 <p class="card-text fw-light">
                   Memiliki Kebutuhan Data?<br /><b>GC</b> Menyediakan informasi
                   tersebut dengan lengkap dan terpercaya
                 </p>
-                <a href="#" class="btn btn-primary">Buat Aspirasi</a>
+                <a href="#" class="btn btn-primary"
+                  >Buat Permintaan Informasi</a
+                >
               </div>
             </div>
           </div>
@@ -215,56 +269,21 @@
           </div>
         </div>
       </div>
-      <script>
-        $(document).ready(function () {
-          $(".laporan").slick({
-            centerMode: true,
-            infinite: true,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            arrows: false,
-            responsive: [
-              {
-                breakpoint: 768,
-                settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: "40px",
-                  slidesToShow: 3,
-                },
-              },
-              {
-                breakpoint: 480,
-                settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: "40px",
-                  slidesToShow: 1,
-                },
-              },
-            ],
-          });
-        });
-      </script>
     </section>
     <!-- laporan warga -->
 
     <!-- tutorial -->
     <section
       id="Tutorial"
-      class="tutor bg-primary bg-gradient text-white py-5 shadow"
+      class="tutor bg-gradient-section text-white py-5 shadow"
     >
       <div class="container">
         <div class="row g-3 align-items-center">
           <div class="col-md-6">
-            <img src="lapor-ilu/24014019_6897997 1.svg" alt="" class="w-100" />
+            <img src="img/ilu-02.svg" alt="" class="w-100" />
           </div>
           <div class="col-md-6">
             <h1 class="fw-bold">Bagaimana Cara GC Bekerja</h1>
-          </div>
-          <div class="col-md-12">
             <div class="accordion accordion-flush" id="Tutorial">
               <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -448,39 +467,6 @@
           </div>
         </div>
       </div>
-      <script>
-        $(document).ready(function () {
-          $(".laporan").slick({
-            centerMode: true,
-            infinite: true,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            arrows: false,
-            responsive: [
-              {
-                breakpoint: 768,
-                settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: "40px",
-                  slidesToShow: 3,
-                },
-              },
-              {
-                breakpoint: 480,
-                settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: "40px",
-                  slidesToShow: 1,
-                },
-              },
-            ],
-          });
-        });
-      </script>
     </section>
     <!-- hotNews -->
 
@@ -518,5 +504,39 @@
       crossorigin="anonymous"
     ></script>
     <script src="main.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".laporan").slick({
+          centerMode: true,
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          arrows: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
   </body>
 </html>
