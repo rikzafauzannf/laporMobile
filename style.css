@@ -1,0 +1,17 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.418), black),
+    url("/people_cant_even_walk_the_streets-wallpaper-1920x1080.jpg");
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.navbar {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.651),
+    rgba(255, 255, 255, 0.986)
+  );
+}

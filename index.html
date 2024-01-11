@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GC</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <nav class="navbar navbar-expand-lg fixed-top shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">GC</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link bg-gradient active" aria-current="page" href="#"
+              >Home</a
+            >
+            <a class="nav-link bg-gradient" href="#">Features</a>
+            <a class="nav-link bg-gradient" href="#">Pricing</a>
+            <a class="nav-link bg-gradient disabled" aria-disabled="true"
+              >Disabled</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav> -->
+    <!-- As a heading -->
+    <nav class="navbar fixed-top shadow">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">GC</span>
+      </div>
+    </nav>
+    <!-- hero -->
+    <section
+      class="hero w-100 min-vh-100 bg-secondary d-flex justify-content-center align-items-center shadow"
+    >
+      <div class="text-center">
+        <div class="container">
+          <h1 class="fw-bold text-white">GC</h1>
+          <p class="text-white fw-semibold fst-italic">
+            "Gerak Cepat Tanggapi Segala Aspirasi dan Permintaan Informasi"
+          </p>
+          <div class="d-flex justify-content-center">
+            <button class="btn btn-primary btn-sm bg-gradient shadow me-2">
+              Lapor Sekarang
+            </button>
+            <button class="btn btn-light btn-sm bg-gradient shadow">
+              Daftar
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero -->
+
+    <!-- fitur -->
+    <section class="fitur bg-primary text-white py-5 shadow">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-md-12 text-center">
+            <p class="fw-medium">GC Fiturs</p>
+            <h4 class="fw-bold">Buat Pengalaman laporan Anda Lebih Cepat</h4>
+            <small>
+              Beberapa Fitur yang ada untuk membantu aspirasi anda sampai SKPD
+            </small>
+          </div>
+          <div class="col-md-12">
+            <ul
+              class="nav nav-pills nav-fill mb-3"
+              id="pills-tab"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link bg-gradient shadow-sm active"
+                  id="pills-Aspirasi-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-Aspirasi"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-Aspirasi"
+                  aria-selected="true"
+                >
+                  Aspirasi
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link bg-gradient shadow-sm"
+                  id="pills-Pengaduan-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-Pengaduan"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-Pengaduan"
+                  aria-selected="false"
+                >
+                  Pengaduan
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link bg-gradient shadow-sm"
+                  id="pills-Informasi-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-Informasi"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-Informasi"
+                  aria-selected="false"
+                >
+                  Informasi
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-Aspirasi"
+                role="tabpanel"
+                aria-labelledby="pills-Aspirasi-tab"
+                tabindex="0"
+              >
+                <h3 class="text-center">Aspirasi</h3>
+                <img src="12219840_4884150.svg" alt="" class="w-100" />
+                <p class="text-center">
+                  Masyarakat dapat Menyampaikan Aspirasi dengan aman dan terjaga
+                  kerahasiaannya
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-Pengaduan"
+                role="tabpanel"
+                aria-labelledby="pills-Pengaduan-tab"
+                tabindex="0"
+              >
+                <h3 class="text-center">Pengaduan</h3>
+                <img src="30576701_7718875.svg" alt="" class="w-100" />
+                <p class="text-center">
+                  Ada Sebuah Penemuan?, bingung pengen lapor kemana?<br />Tenang
+                  GC tersedia fitur pengaduan untuk masyarakat Kota Tasikmalaya
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-Informasi"
+                role="tabpanel"
+                aria-labelledby="pills-Informasi-tab"
+                tabindex="0"
+              >
+                <h3 class="text-center">Permintaan Informasi</h3>
+                <img src="30576696_7720439.svg" alt="" class="w-100" />
+                <p class="text-center">
+                  Memiliki Kebutuhan Akan Data, GC bisa menyediakan informasi
+                  tersebut dengan lengkap dan terpercaya
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fitur -->
+
+    <section class="tutor py-5">
+      <div class="container">
+        <div class="row g-3 align-items-center">
+          <div class="col-md-6">
+            <img src="24237566_6922092.svg" alt="" class="w-100" />
+          </div>
+          <div class="col-md-6">
+            <h1 class="fw-bold">Bagaimana Cara GC Bekerja</h1>
+          </div>
+          <div class="col-md-12">
+            <h5>1. Buka Website</h5>
+            <p class="text-secondary fw-light">
+              Buka Website
+              <span class="text-primary"><u>GC.tasikmalayakota.go.id</u></span>
+            </p>
+          </div>
+          <div class="col-md-12">
+            <h5>2. Pilih Kasifikasi Laporan</h5>
+            <p class="text-secondary fw-light">
+              Pilih Klasifikasi Laporan, (Aspirasi, Pengaduan, Permintaan
+              Informasi)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
