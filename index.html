@@ -17,6 +17,28 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- SLICK -->
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!-- JS -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </head>
   <body>
     <!-- <nav class="navbar navbar-expand-lg fixed-top shadow">
@@ -186,7 +208,95 @@
     </section>
     <!-- fitur -->
 
-    <section class="tutor py-5 shadow">
+    <!-- laporan warga -->
+    <section class="laporanWarga py-5 shadow">
+      <div class="container">
+        <h2 class="fw-bold">Laporan Warga</h2>
+      </div>
+      <div class="laporan">
+        <div class="card border border-0 shadow-sm my-3">
+          <div class="card-body text-center">
+            <small class="fw-light">#Aspirasi</small>
+            <h5 class="fw-bold">Judul Aspirasi</h5>
+            <p class="fw-medium">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptate, in?"
+            </p>
+            <button class="btn btn-light btn-sm w-100">Details Laporan</button>
+          </div>
+        </div>
+        <div class="card border border-0 shadow-sm my-3">
+          <div class="card-body text-center">
+            <small class="fw-light">#Aspirasi</small>
+            <h5 class="fw-bold">Judul Aspirasi</h5>
+            <p class="fw-medium">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptate, in?"
+            </p>
+            <button class="btn btn-light btn-sm w-100">Details Laporan</button>
+          </div>
+        </div>
+        <div class="card border border-0 shadow-sm my-3">
+          <div class="card-body text-center">
+            <small class="fw-light">#Aspirasi</small>
+            <h5 class="fw-bold">Judul Aspirasi</h5>
+            <p class="fw-medium">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptate, in?"
+            </p>
+            <button class="btn btn-light btn-sm w-100">Details Laporan</button>
+          </div>
+        </div>
+        <div class="card border border-0 shadow-sm my-3">
+          <div class="card-body text-center">
+            <small class="fw-light">#Aspirasi</small>
+            <h5 class="fw-bold">Judul Aspirasi</h5>
+            <p class="fw-medium">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptate, in?"
+            </p>
+            <button class="btn btn-light btn-sm w-100">Details Laporan</button>
+          </div>
+        </div>
+      </div>
+      <script>
+        $(document).ready(function () {
+          $(".laporan").slick({
+            centerMode: true,
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: "40px",
+                  slidesToShow: 3,
+                },
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: "40px",
+                  slidesToShow: 1,
+                },
+              },
+            ],
+          });
+        });
+      </script>
+    </section>
+    <!-- laporan warga -->
+
+    <!-- tutorial -->
+    <section class="tutor bg-primary text-white py-5 shadow">
       <div class="container">
         <div class="row g-3 align-items-center">
           <div class="col-md-6">
@@ -195,36 +305,225 @@
           <div class="col-md-6">
             <h1 class="fw-bold">Bagaimana Cara GC Bekerja</h1>
           </div>
-          <div class="col-md-12 shadow-sm">
-            <h5>1. Buka Website</h5>
-            <p class="text-secondary fw-light">
-              Buka Website
-              <span class="text-primary"><u>GC.tasikmalayakota.go.id</u></span>
-            </p>
-          </div>
-          <div class="col-md-12 shadow-sm">
-            <h5>2. Pilih Kasifikasi Laporan</h5>
-            <p class="text-secondary fw-light">
-              Pilih Klasifikasi Laporan, (Aspirasi, Pengaduan, Permintaan
-              Informasi)
-            </p>
-          </div>
-          <div class="col-md-12 shadow-sm">
-            <h5>3. Pengisian Laporan</h5>
-            <p class="text-secondary fw-light">
-              Pilih Klasifikasi Laporan, (Aspirasi, Pengaduan, Permintaan
-              Informasi)
-            </p>
-          </div>
-          <div class="col-md-12 shadow-sm">
-            <h5>4. Upload Foto Pendukung</h5>
-            <p class="text-secondary fw-light">
-              Upload Bukti Laporan anda berupa foto atau Video (bila ada)
-            </p>
+          <div class="col-md-12">
+            <div class="accordion accordion-flush" id="Tutorial">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#one"
+                    aria-expanded="false"
+                    aria-controls="one"
+                  >
+                    Buka Website
+                  </button>
+                </h2>
+                <div
+                  id="one"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#Tutorial"
+                >
+                  <div class="accordion-body">
+                    <p class="fw-light">
+                      Buka Website
+                      <span class="text-primary">
+                        <u>GC.tasikmalayakota.go.id</u>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#Two"
+                    aria-expanded="false"
+                    aria-controls="Two"
+                  >
+                    Pilih Kasifikasi Laporan
+                  </button>
+                </h2>
+                <div
+                  id="Two"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#Tutorial"
+                >
+                  <div class="accordion-body">
+                    <p class="fw-light">
+                      Pilih Klasifikasi Laporan, (Aspirasi, Pengaduan,
+                      Permintaan Informasi)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#Three"
+                    aria-expanded="false"
+                    aria-controls="Three"
+                  >
+                    Pengisian Laporan
+                  </button>
+                </h2>
+                <div
+                  id="Three"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#Tutorial"
+                >
+                  <div class="accordion-body">
+                    <p class="fw-light">
+                      Pilih Klasifikasi Laporan, (Aspirasi, Pengaduan,
+                      Permintaan Informasi)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#Four"
+                    aria-expanded="false"
+                    aria-controls="Four"
+                  >
+                    Upload Foto Pendukung
+                  </button>
+                </h2>
+                <div
+                  id="Four"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#Tutorial"
+                >
+                  <div class="accordion-body">
+                    <p class="fw-light">
+                      Upload Bukti Laporan anda berupa foto atau Video (bila
+                      ada)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#Five"
+                    aria-expanded="false"
+                    aria-controls="Five"
+                  >
+                    Selesai
+                  </button>
+                </h2>
+                <div
+                  id="Five"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#Tutorial"
+                >
+                  <div class="accordion-body">
+                    <p class="fw-light">
+                      Pembuatan Laporan Anda Telah Selesai, Tunggu Verifikasi
+                      Admin dan Tanggapan Dinas Terkait
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- tutorial -->
+
+    <!-- hotNews -->
+    <section class="hotnews py-5 shadow">
+      <div class="container">
+        <h2 class="fw-bold">HotNews<span class="text-primary">.</span></h2>
+      </div>
+      <div class="laporan">
+        <div class="card border border-0 shadow-sm my-3">
+          <div class="card-body text-center">
+            <h5 class="fw-bold">Nama Dinas</h5>
+            <p class="fw-medium">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptate, in?"
+            </p>
+          </div>
+        </div>
+        <div class="card border border-0 shadow-sm my-3">
+          <div class="card-body text-center">
+            <h5 class="fw-bold">Nama Dinas</h5>
+            <p class="fw-medium">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptate, in?"
+            </p>
+          </div>
+        </div>
+        <div class="card border border-0 shadow-sm my-3">
+          <div class="card-body text-center">
+            <h5 class="fw-bold">Nama Dinas</h5>
+            <p class="fw-medium">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptate, in?"
+            </p>
+          </div>
+        </div>
+        <div class="card border border-0 shadow-sm my-3">
+          <div class="card-body text-center">
+            <h5 class="fw-bold">Nama Dinas</h5>
+            <p class="fw-medium">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptate, in?"
+            </p>
+          </div>
+        </div>
+      </div>
+      <script>
+        $(document).ready(function () {
+          $(".laporan").slick({
+            centerMode: true,
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: "40px",
+                  slidesToShow: 3,
+                },
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: "40px",
+                  slidesToShow: 1,
+                },
+              },
+            ],
+          });
+        });
+      </script>
+    </section>
+    <!-- hotNews -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
