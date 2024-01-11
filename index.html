@@ -41,9 +41,9 @@
     ></script>
   </head>
   <body>
-    <!-- <nav class="navbar navbar-expand-lg fixed-top shadow">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">GC</a>
+    <nav class="navbar navbar-expand-lg fixed-top shadow">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">GC</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -56,25 +56,22 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link bg-gradient active" aria-current="page" href="#"
-              >Home</a
-            >
-            <a class="nav-link bg-gradient" href="#">Features</a>
-            <a class="nav-link bg-gradient" href="#">Pricing</a>
-            <a class="nav-link bg-gradient disabled" aria-disabled="true"
-              >Disabled</a
-            >
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#Fitur">Fitur</a>
+            <a class="nav-link" href="#LaporanWarga">Laporan Warga</a>
+            <a class="nav-link" href="#Tutorial">Tutorial</a>
+            <a class="nav-link" href="#HotNews">HotNews</a>
           </div>
         </div>
       </div>
-    </nav> -->
+    </nav>
     <!-- As a heading -->
-    <nav class="navbar fixed-top shadow">
+    <!-- <nav class="navbar fixed-top shadow">
       <div class="container-fluid">
         <span class="navbar-brand mb-0 h1">GC</span>
       </div>
-    </nav>
+    </nav> -->
     <!-- hero -->
     <section
       class="hero w-100 min-vh-100 bg-secondary d-flex justify-content-center align-items-center shadow"
@@ -99,15 +96,13 @@
     <!-- hero -->
 
     <!-- fitur -->
-    <section class="fitur bg-primary text-white py-5 shadow">
+    <section id="Fitur" class="fitur bg-primary text-white py-5 shadow">
       <div class="container">
         <div class="row g-3">
           <div class="col-md-12 text-center">
-            <p class="fw-medium">GC Fiturs</p>
-            <h4 class="fw-bold">Buat Pengalaman laporan Anda Lebih Cepat</h4>
-            <small>
-              Beberapa Fitur yang ada untuk membantu aspirasi anda sampai SKPD
-            </small>
+            <h5 class="fw-medium"><span class="fw-bold">GC</span> Fiturs</h5>
+            <h3 class="fw-bold">Buat Pengalaman laporan Anda Lebih Cepat</h3>
+            <small class="fw-light"> Fitur Pendukung Laporan Anda </small>
           </div>
           <div class="col-md-12">
             <ul
@@ -167,7 +162,13 @@
                 tabindex="0"
               >
                 <h3 class="text-center">Aspirasi</h3>
-                <img src="12219840_4884150.svg" alt="" class="w-100" />
+                <div class="justify-content-center align-items-center d-flex">
+                  <img
+                    src="12219840_4884150.svg"
+                    alt=""
+                    class="w-50 ratio ratio-1x1"
+                  />
+                </div>
                 <p class="text-center">
                   Masyarakat dapat Menyampaikan Aspirasi dengan aman dan terjaga
                   kerahasiaannya
@@ -181,7 +182,13 @@
                 tabindex="0"
               >
                 <h3 class="text-center">Pengaduan</h3>
-                <img src="30576701_7718875.svg" alt="" class="w-100" />
+                <div class="justify-content-center align-items-center d-flex">
+                  <img
+                    src="30576701_7718875.svg"
+                    alt=""
+                    class="w-50 ratio ratio-1x1"
+                  />
+                </div>
                 <p class="text-center">
                   Ada Sebuah Penemuan?, bingung pengen lapor kemana?<br />Tenang
                   GC tersedia fitur pengaduan untuk masyarakat Kota Tasikmalaya
@@ -195,7 +202,13 @@
                 tabindex="0"
               >
                 <h3 class="text-center">Permintaan Informasi</h3>
-                <img src="30576696_7720439.svg" alt="" class="w-100" />
+                <div class="justify-content-center align-items-center d-flex">
+                  <img
+                    src="30576696_7720439.svg"
+                    alt=""
+                    class="w-50 ratio ratio-1x1"
+                  />
+                </div>
                 <p class="text-center">
                   Memiliki Kebutuhan Akan Data, GC bisa menyediakan informasi
                   tersebut dengan lengkap dan terpercaya
@@ -209,7 +222,7 @@
     <!-- fitur -->
 
     <!-- laporan warga -->
-    <section class="laporanWarga py-5 shadow">
+    <section id="LaporanWarga" class="laporanWarga py-5 shadow">
       <div class="container">
         <h2 class="fw-bold">Laporan Warga</h2>
       </div>
@@ -296,7 +309,7 @@
     <!-- laporan warga -->
 
     <!-- tutorial -->
-    <section class="tutor bg-primary text-white py-5 shadow">
+    <section id="Tutorial" class="tutor bg-primary text-white py-5 shadow">
       <div class="container">
         <div class="row g-3 align-items-center">
           <div class="col-md-6">
@@ -447,7 +460,7 @@
     <!-- tutorial -->
 
     <!-- hotNews -->
-    <section class="hotnews py-5 shadow">
+    <section id="HotNews" class="hotnews py-5 shadow">
       <div class="container">
         <h2 class="fw-bold">HotNews<span class="text-primary">.</span></h2>
       </div>
@@ -526,7 +539,7 @@
     <!-- hotNews -->
 
     <footer class="footer bg-primary p-2 text-white shadow">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row g-2">
           <div class="col-md-12">
             <h3 class="fw-bold">GC</h3>
@@ -534,7 +547,7 @@
           <div class="col-md-12">
             <p>
               Laporan anda akan dijaga kerahasiaannya, jadilah warga yang jujur
-              untuk bersama-sama membangun Kota Tasikmalaya bersama
+              untuk bersama-sama membangun Kota Tasikmalaya.
             </p>
           </div>
           <!-- <div class="col-ms-6">
