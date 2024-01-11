@@ -2,12 +2,27 @@
   font-family: "Poppins", sans-serif;
 }
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.418), black),
-    url("/people_cant_even_walk_the_streets-wallpaper-1920x1080.jpg");
+  /* background: linear-gradient(rgba(0, 0, 0, 0.418), black),
+    url("/people_cant_even_walk_the_streets-wallpaper-1920x1080.jpg"); */
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(0, 0, 0, 0.315) 50%,
+      rgba(0, 0, 0, 0.582) 100%
+    ),
+    url("hero.jpg");
   background-position: top left;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+.formHero {
+  position: absolute;
+  bottom: -180px;
+  z-index: 1;
+  width: 400px;
+  filter: grayscale(50);
 }
 .navbar {
   background: linear-gradient(
